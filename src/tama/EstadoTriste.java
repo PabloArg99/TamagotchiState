@@ -9,23 +9,23 @@ public class EstadoTriste extends Estado{
     }
 
     @Override
-    public void darDeComer() {
+    public void darDeComer(Tamagotchi tama) {
 
     }
 
     @Override
-    public void darDeTomar() {
+    public void darDeTomar(Tamagotchi tama) {
 
     }
 
     @Override
-    public void hacerleMimos() {
+    public void hacerleMimos(Tamagotchi tama) {
         tama.changeState(new EstadoFeliz(tama));
 
     }
 
     @Override
-    public void pegarle() {
+    public void pegarle(Tamagotchi tama) {
         tama.llorar();
         tama.changeState(new EstadoTriste(tama));
 

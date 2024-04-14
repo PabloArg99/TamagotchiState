@@ -19,4 +19,24 @@ public class Tamagotchi {
     public void sonreir(){
         System.out.println("\\(◕‿◕)/");
     }
+    public void darDeComer(){
+        estado.darDeComer(this );
+    }
+    public void darDeTomar(){
+        estado.darDeTomar(this );
+    }
+    public void hacerleMimos(){
+        estado.hacerleMimos( this);
+    }
+    public void pegarle(){
+        estado.pegarle(this );
+    }
+
+
+    @Override
+    public String toString() {
+        String estado = this.estado.toString();
+
+        return "Nuestro amigo " + this.nombre + " actualmente esta :" + estado ;
+    }
 }
